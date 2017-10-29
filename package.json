@@ -1,0 +1,25 @@
+{
+  "name": "murmur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobprotocol/murmur.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobprotocol/murmur/issues"
+  },
+  "homepage": "https://github.com/mobprotocol/murmur#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.16.2",
+    "ipfs": "^0.26.0",
+    "ipfs-pubsub-room": "^0.4.0"
+  }
+}
