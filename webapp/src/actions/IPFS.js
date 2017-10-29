@@ -11,8 +11,14 @@ export default class ipfs {
       })
 
       this.ipfs.on('ready', () => {
+        this.ipfs.id((err, identity) => {
+          if(err) throw error
+          console.log('identity', identity)
+        })
         console.log('ipfs client is ready!')
       })
+
+
     }
   }
 }
