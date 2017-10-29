@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-import Main from './components/Main'
+import Main from './comps/Main'
 
 render(
   <Main />,
-  document.getElementById('app')
+  document.getElementById('entry')
 )
