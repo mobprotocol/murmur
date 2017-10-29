@@ -9,9 +9,10 @@ class Network extends Component {
   }
 
   render() {
+    const { id } = this.props
     return (
       <div style={networkStyle}>
-        <h3>NETWORK</h3>
+        <h3>ID {id}</h3>
       </div>
     )
   }

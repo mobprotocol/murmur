@@ -9,16 +9,14 @@ export default class ipfs {
           pubsub: true
         }
       })
-
       this.ipfs.on('ready', () => {
         this.ipfs.id((err, identity) => {
           if(err) throw error
           console.log('identity', identity)
+          dispatch({type: 'DEFINE_ID', val: identity.id})
         })
         console.log('ipfs client is ready!')
       })
-
-
     }
   }
 }

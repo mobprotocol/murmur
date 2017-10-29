@@ -9,6 +9,11 @@ export default function(state = initialState, action) {
         ...state,
         peers: peers.push(action.val)
       }
+    case 'DEFINE_ID':
+      return {
+        ...state,
+        id: action.val
+      }
     default:
       return state
   }
