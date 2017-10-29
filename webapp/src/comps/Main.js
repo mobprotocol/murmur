@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import store from '../store'
 import Network from './Network'
 
 export default class Main extends Component {
   render() {
     return (
-      <div style={mainStyle}>
-        <Network />
-      </div>
+      <Provider store={store}>
+        <div style={mainStyle}>
+          <Network />
+        </div>
+      </Provider>
     )
   }
 }
