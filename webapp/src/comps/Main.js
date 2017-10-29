@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Network from './Network'
 
 export default class Main extends Component {
   render() {
     return (
       <div style={mainStyle}>
-        <h1>murmur</h1>
+        <Network />
       </div>
     )
   }
