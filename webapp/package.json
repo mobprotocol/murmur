@@ -4,7 +4,7 @@
   "description": "ipfs pub sub exchange ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wds": "webpack-dev-server"
   },
   "keywords": [
     "ipfs",
@@ -14,7 +14,12 @@
   ],
   "author": "Sean Pollock",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "devDependencies": {
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
