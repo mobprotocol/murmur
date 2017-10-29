@@ -7,7 +7,7 @@ export default function(state = initialState, action) {
     case 'ADD_PEER':
       return {
         ...state,
-        peer.push(action.val)
+        peers: peers.push(action.val)
       }
     default:
       return state

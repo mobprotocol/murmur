@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { IPFS } from '../actions/index'
+import { connect } from 'react-redux'
 
-export default class Network extends Component {
+class Network extends Component {
+  componentDidMount() {
+    const { dispatch } = this.props
+    dispatch(IPFS.startNode())
+  }
+
   render() {
     return (
       <div style={networkStyle}>
@@ -9,6 +16,10 @@ export default class Network extends Component {
     )
   }
 }
+
+const storeToProps = store => store
+console.log('storeToProps', storeToProps)
+export default connect(storeToProps)(Network)
 
 const networkStyle = {
   width: 700,
