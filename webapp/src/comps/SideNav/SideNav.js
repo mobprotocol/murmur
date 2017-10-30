@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import ChooseToken from './ChooseToken'
 
 export default class SideNav extends Component {
   render() {
     return (
       <div style={sideNavStyle}>
-
+        <ChooseToken />
       </div>
     )
   }
