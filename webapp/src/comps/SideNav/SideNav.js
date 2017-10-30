@@ -6,6 +6,9 @@ export default class SideNav extends Component {
     return (
       <div style={sideNavStyle}>
         <ChooseToken />
+        <div style={buttonStyle}>
+          <h3>Subscribe</h3>
+        </div>
       </div>
     )
   }
@@ -19,4 +22,13 @@ const sideNavStyle = {
   margin: 20,
   textAlign: 'center',
   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+}
+
+const buttonStyle = {
+  width: '90%',
+  height: 40,
+  backgroundColor: '#98FB98',
+  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  borderRadius: 5
+
 }

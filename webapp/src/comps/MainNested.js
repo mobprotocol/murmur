@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import SideNav from './SideNav/SideNav'
+import Network from './Network'
 
 class MainNested extends Component {
   componentDidMount() {
@@ -11,6 +12,7 @@ class MainNested extends Component {
     return (
       <div style={mainStyle}>
         <SideNav />
+        <Network />
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
+import * as reducers from './reducers/index'
 
-import ipfs from './reducers/ipfs'
+const reducer = combineReducers({...reducers})
 
-export default createStore(ipfs, applyMiddleware(thunk))
+export default createStore(reducer, applyMiddleware(thunk))

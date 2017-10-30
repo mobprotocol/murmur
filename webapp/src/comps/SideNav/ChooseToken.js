@@ -18,8 +18,8 @@ export default class ChooseToken extends Component {
 
 const chooseTokenStyle = {
   display: 'flex',
-  textAlign: 'center'
-
+  textAlign: 'center',
+  height: 150
 }
 
 const tileStyle = {

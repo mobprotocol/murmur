@@ -18,7 +18,7 @@ class Network extends Component {
   }
 }
 
-const storeToProps = store => store
+const storeToProps = store => store.ipfs
 
 export default connect(storeToProps)(Network)
 
