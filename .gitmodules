@@ -1,0 +1,3 @@
+[submodule "webapp/eths6-redux"]
+	path = webapp/eths6-redux
+	url = https://github.com/SeanAvery/eths6-redux

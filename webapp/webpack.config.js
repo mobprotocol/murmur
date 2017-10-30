@@ -15,7 +15,8 @@ module.exports = {
         query: {
           presets: ['env', 'react', 'stage-3']
         }
-      }
+      },
+      { test: /\.sol$/, loaders: ["solidity-loader?export=true"]},
     ]
   }
 }

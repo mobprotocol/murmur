@@ -17,7 +17,6 @@ export default class ipfs {
           dispatch({type: 'DEFINE_ID', val: identity.id})
           dispatch({type: 'DEFINE_PUBKEY', val: identity.publicKey})
           dispatch({type: 'DEFINE_ADDRESS', val: identity.addresses[0]})
-          // dispatch({type: '', val:})
         })
         console.log('ipfs client is ready!')
       })

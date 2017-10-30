@@ -13,14 +13,13 @@ class Network extends Component {
     return (
       <div style={networkStyle}>
         <h3>ID {id}</h3>
-        <h3>Address {address}</h3>
       </div>
     )
   }
 }
 
 const storeToProps = store => store
-console.log('storeToProps', storeToProps)
+
 export default connect(storeToProps)(Network)
 
 const networkStyle = {
