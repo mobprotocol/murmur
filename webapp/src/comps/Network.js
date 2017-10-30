@@ -9,10 +9,11 @@ class Network extends Component {
   }
 
   render() {
-    const { id } = this.props
+    const { id, address } = this.props
     return (
       <div style={networkStyle}>
         <h3>ID {id}</h3>
+        <h3>Address {address}</h3>
       </div>
     )
   }

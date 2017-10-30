@@ -14,6 +14,16 @@ export default function(state = initialState, action) {
         ...state,
         id: action.val
       }
+    case 'DEFINE_PUBKEY':
+      return {
+        ...state,
+        pubKey: action.val
+      }
+    case 'DEFINE_ADDRESS':
+      return {
+        ...state,
+        address: action.val
+      }
     default:
       return state
   }

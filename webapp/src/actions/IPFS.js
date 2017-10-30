@@ -13,7 +13,11 @@ export default class ipfs {
         this.ipfs.id((err, identity) => {
           if(err) throw error
           console.log('identity', identity)
+          console.log('address', identity.addresses[0])
           dispatch({type: 'DEFINE_ID', val: identity.id})
+          dispatch({type: 'DEFINE_PUBKEY', val: identity.publicKey})
+          dispatch({type: 'DEFINE_ADDRESS', val: identity.addresses[0]})
+          // dispatch({type: '', val:})
         })
         console.log('ipfs client is ready!')
       })
