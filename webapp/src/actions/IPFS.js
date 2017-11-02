@@ -1,4 +1,5 @@
 import IPFS from 'ipfs'
+import Room from 'ipfs-pubsub-room'
 
 export default class ipfs {
   startNode() {
@@ -19,6 +20,24 @@ export default class ipfs {
           dispatch({type: 'DEFINE_ADDRESS', val: identity.addresses[0]})
         })
         console.log('ipfs client is ready!')
+      })
+    }
+  }
+
+  subscribe(topic) {
+    return dispatch => {
+      this.room = Room(this.ipfs, 'mob_eth')
+      this.room.on('peer joined', (peer) => {
+        console.log('peer', peer)
+        dispatch({type: 'ADD_PEER', val: peer})
+      })
+
+      this.room.on('subscribed', () => {
+        console.log('connected to pub sub')
+      })
+
+      this.room.on('message', (msg) => {
+        console.log('recieived msg')
       })
     }
   }

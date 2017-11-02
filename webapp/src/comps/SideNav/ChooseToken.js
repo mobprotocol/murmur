@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 export default class ChooseToken extends Component {
   render() {
     return (
